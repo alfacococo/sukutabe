@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>スグ食べ</title>
+  <script>
+      (function (d) {
+          var config = {
+                  kitId: 'cla5uxh',
+                  scriptTimeout: 3000,
+                  async: true
+              },
+              h = d.documentElement, t = setTimeout(function () {
+                  h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+              }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0],
+              a;
+          h.className += " wf-loading";
+          tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+          tk.async = true;
+          tk.onload = tk.onreadystatechange = function () {
+              a = this.readyState;
+              if (f || a && a != "complete" && a != "loaded") return;
+              f = true;
+              clearTimeout(t);
+              try {
+                  Typekit.load(config)
+              } catch (e) {
+              }
+          };
+          s.parentNode.insertBefore(tk, s)
+      })(document);
+  </script>
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+<body>
+<!--header-->
+<header class="header js-header">
+  <div class="hamburger_btn" id="hamburger_btn">
+    <span class="hamburger_bar"></span>
+    <span class="hamburger_bar"></span>
+    <span class="hamburger_bar"></span>
+  </div>
+  <img alt="logo" src="image/logo.png" class="logo">
+  <nav class="header_nav">
+    <ul>
+      <li>
+        <a href="#about">
+          <span>スグ食べとは</span>
+          <span>ABOUT</span></a>
+      </li>
+      <li>
+        <a href="#trail">
+          <span>お試し野菜</span>
+          <span>TRIAL</span></a>
+      </li>
+      <li>
+        <a href="#farmers">
+          <span>契約農家</span>
+          <span>FARMERS</span></a>
+      </li>
+      <li>
+        <a href="#voice">
+          <span>お客様の声</span>
+          <span>VOICE</span></a>
+      </li>
+    </ul>
+  </nav>
+  <img src="image/ic_cart.png" alt="" class="cart">
+</header>
+<div class="hamburger_area" id="hamburger_area">
+  <ul>
+    <li>
+      <a href="#about">
+        <span>スグ食べとは</span>
+        <span>ABOUT</span></a>
+    </li>
+    <li>
+      <a href="#trail">
+        <span>お試し野菜</span>
+        <span>TRIAL</span></a>
+    </li>
+    <li>
+      <a href="#farmers">
+        <span>契約農家</span>
+        <span>FARMERS</span></a>
+    </li>
+    <li>
+      <a href="#voice">
+        <span>お客様の声</span>
+        <span>VOICE</span></a>
+    </li>
+  </ul>
+</div>
+<!--top-->
+<section class="top">
+  <img alt="vegetables" src="image/top_image.png">
+  <div class="top_img"></div>
+  <div class="top_text">
+    <p>こだわり農家の朝どり</p>
+    <p>オーガニック野菜を</p>
+    <p>ご自宅まで</p>
+  </div>
+  <div class="scroll_bar">
+    <p>scroll</p>
+    <span class="bar"></span>
+  </div>
+</section>
+<main>
+<!--about-->
+<section class="about" id="about">
+  <div class="about_en_title">
+    <h2>ABOUT</h2>
+    <span class="about_en_title_line"></span>
+  </div>
+  <div class="about_text">
+    <h2>スグ食べとは</h2>
+    <p>
+      「スグ食べ」は、厳選したオーガニック農家さんの穫れたて野菜を販売しています。食材から選べるのはもちろん、生産者からも選べます。生産方法や生産地、それぞれ異なるこだわりで、お気に入りの農家さんを見つけてください。最短で24時間以内に届く新鮮なオーガニック野菜宅配サービスです。</p>
+    <div class="buy_btn">
+      <a href="#"><img alt="buy button" src="image/btn_1.png" class="btn_1"></a>
+      <a href="#"><img src="image/buy_btn2.png" alt="buy button" class="btn_2"></a>
+    </div>
+  </div>
+  <img alt="" src="image/about_image.png" class="about_image">
+  <img src="image/about_image_sp.png" alt="" class="about_image_sp">
+</section>
+
+<!--reason-->
+<section class="reason" id="reason">
+  <h1>REASON</h1>
+  <h1>スグ食べが選ばれる三つの理由</h1>
+  <div class="reason1">
+    <div class="reason1_text">
+      <h2>1 本当の意味での産地直送</h2>
+      <p>
+        本当の意味での産地直送「なるべく収穫したばかりの状態で、野菜を味わって欲しい。」スグ食べでは、既存の産地直送サービスのように箱詰め用の倉庫を介すことはありません。農家が収穫したその日に、お客様の元へ直送で野菜をお送りします。</p>
+    </div>
+    <div class="reason1_photo">
+      <img src="image/rounded_rectangle1.png" alt="" class="rounded_rectangle1">
+      <img alt="" src="image/vegetables_reason1.png" class="vegetables_reason1">
+    </div>
+  </div>
+  <div class="reason2">
+    <div class="reason2_photo">
+      <img src="image/rounded_rectangle2.png" alt="" class="rounded_rectangle2">
+      <img alt="" src="image/tomatoes_reason2.png" class="tomatoes_reason2">
+    </div>
+    <div class="reason2_text">
+      <h2>2 安心安全な無農薬野菜</h2>
+      <p>
+        出品している生産者は、有機栽培もしくは自然栽培の農家のみ。全ての商品が無農薬・無化学肥料など、安全にこだわって生産された「オーガニック農作物」です。そのため、どの商品も安心してお買い求めいただけます。</p>
+    </div>
+  </div>
+  <div class="reason3">
+    <div class="reason3_text">
+      <h2>3 たくさんの<br>旬な野菜との出会い</h2>
+      <p>
+        年間数十種の野菜を作る生産者から、今が旬の多様な野菜が届きます。スグ食べでは生産者ごとに商品が異なります。中には年間100種類もの多品種生産をしている生産者も。旬な野菜はもちろん、珍しい野菜とも出会えます。 </p>
+    </div>
+    <div class="reason3_photo">
+      <img src="image/rounded_rectangle1.png" alt="" class="rounded_rectangle1">
+      <img alt="" src="image/vegetables_reason3.png" class="vegetables_reason3">
+    </div>
+  </div>
+</section>
+<!--trail-->
+<section class="trail" id="trail">
+  <img alt="" class="trail_decoration" src="image/trail.png">
+  <p class="leading">自信があるから、是非食べてもらいたい</p>
+  <h1>１回限り！少量お試しセット</h1>
+  <div class="trail_box">
+    <div class="trail_1">
+      <img alt="" src="image/vegetables_trail.png">
+      <div class="trail_1_title">
+        <p>ベジックス</p>
+        <span>|</span>
+        <p>旬＊お試し野菜セット（6品目）</p>
+      </div>
+      <div class="trail_1_content">
+        <span>￥1,280</span>
+        <span>（税込 / 送料別）</span>
+        <span>生産者/千葉県松戸市</span>
+      </div>
+    </div>
+    <div class="trail_2">
+      <img alt="" src="image/paprika_trail.png">
+      <div class="trail_2_title">
+        <p>くちぶえ農園</p>
+        <span>|</span>
+        <p>旬＊お試し野菜セット（6品目）</p>
+      </div>
+      <div class="trail_2_content">
+        <span>￥1,280</span>
+        <span>（税込 / 送料別）</span>
+        <span>生産者/長野県 飯田市</span>
+      </div>
+    </div>
+  </div>
+  <a href="#">
+    <img alt="" class="buy_btn2" src="image/buy_btn2.png">
+  </a>
+</section>
+<!--quality-->
+<section class="quality">
+  <div class="quality">
+    <h1>QUALITY</h1>
+    <h1>スグ食べの品質保証</h1>
+    <p>商品に不備があった際には、<br>
+      スグ食べが “全額” 返金対応します<br>
+      スグ食べに出品している農家さんたちは、<br>
+      「大切に育てた自慢の農作物を、<br>
+      できるだけ美味しい状態で食べてもらいたい。」<br>
+      そんな想いを持った農家さんばかりです。<br>
+      そのため、収穫から梱包・出荷にいたるまでしっかりと品質管理されています。<br>
+      とはいえ、実物を見ずに野菜や果物を購入するのはちょっと不安…<br>
+      そんな方にも安心してご購入いただけるよう、<br>
+      スグ食べでは品質保証をお約束しています。<br>
+      万が一届いた商品に不備があった際には、<br>
+      スグ食べにて全額返金対応いたします。</p>
+  </div>
+</section>
+<!--Our Philosophy-->
+<section class="philosophy" id="farmers">
+  <h1>Our Philosophy</h1>
+  <span>こんな農家さんが登録しています</span>
+  <h2 class="philosophy_title">私たちの野菜、<br>こんなにおいしいんです</h2>
+  <div class="philosophy_box">
+    <div class="philosophy1">
+      <div class="philosophy1_top">
+        <h2 class="philosophy1_top_title">安心安全なお野菜を、<br>
+          ご堪能ください</h2>
+        <p class="philosophy1_top_author">ひだまり農場 （岡山県） 山田洋一　</p>
+      </div>
+      <div class="philosophy1_content">
+        <img alt="" src="image/philosophy_1.png">
+        <div class="philosophy1_description">
+          「ひだまり農場」では栽培期間中に農薬・化学肥料を一切使用せず、年間約100種類の野菜と米、卵を生産しています。堆肥・肥料もすべて手作りし、有機質のものを使用しています。
+        </div>
+      </div>
+    </div>
+    <div class="philosophy2">
+      <div class="philosophy2_top">
+        <h2 class="philosophy2_top_title">旬なお野菜を<br>
+          存分に楽しんでください</h2>
+        <p class="philosophy2_top_author">爽緑農園 太田紘一</p>
+      </div>
+      <div class="philosophy2_content">
+        <img alt="" src="image/philosophy_2.png">
+        <div class="philosophy2_description">
+          「爽緑農園」では農薬や除草剤は一切使用せず、一つ一つのお野菜を丁寧に栽培しています。お日様の光をたくさん浴びて育ったお野菜は、葉や皮まで余すことなく食べることができます。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--voice-->
+<section class="voice" id="voice">
+  <h1>VOICE</h1>
+  <span>おかげさまで感謝のお声をいただいています</span>
+  <h1>食べてわかった、この違い</h1>
+  <div class="voice_box" id="voice_box_pc">
+    <div class="voice1">
+      <img alt="" src="image/voice_1.png">
+      <p class="voice1_name">神奈川県A様</p>
+      <h3>香りまでおいしい、新鮮さ</h3>
+      <p>
+        箱を開けた途端に広がった野菜の香り。スーパーで買った野菜とはどうしてこんなに違いがあるのかとびっくりするほど豊かな大地の香りです。葉っぱまでシャキシャキのにんじんは特に子供がお気に入り。ゆでただけでも、野菜の甘みが優しく広がり、本来の味がたのしめます。</p>
+    </div>
+    <div class="voice2">
+      <img alt="" src="image/voice_2.png">
+      <p class="voice2_name">千葉県O様</p>
+      <h3>安心できる品質に大満足</h3>
+      <p>
+        オーガニック農作物にこだわった生産者から送られてくるため、とても安心して毎日食卓に出せるのがうれしいです。小さな子供や働き盛りの夫など、健康に気を遣って食から体づくりをしたい我が家には、もう手放せない野菜となっています。</p>
+    </div>
+    <div class="voice3">
+      <img alt="" src="image/voice_3.png">
+      <p class="voice3_name">東京都M様</p>
+      <h3>旬の野菜が食べられる豊かさ</h3>
+      <p>
+        鮮度にこだわる「スグ食べ」だからこそ、旬になった野菜を「今だ！」と送ってきてくれるので、食卓に並ぶ野菜は常に旬の食材です。一カ所の農家さんからではなく複数の農家から選べるので、地域によっての旬の違いも楽しめます。たまに、スーパーに並ばないような珍しい野菜がまざるのも、わくわくしますね。</p>
+    </div>
+    </div>
+
+  <div class="voice_box swiper" id="voice_box_sp">
+    <div class="swiper-wrapper">
+    <div class="voice1 swiper-slide">
+      <img alt="" src="image/voice_1.png">
+      <p class="voice1_name">神奈川県A様</p>
+      <h3>香りまでおいしい、新鮮さ</h3>
+      <p>
+        箱を開けた途端に広がった野菜の香り。スーパーで買った野菜とはどうしてこんなに違いがあるのかとびっくりするほど豊かな大地の香りです。葉っぱまでシャキシャキのにんじんは特に子供がお気に入り。ゆでただけでも、野菜の甘みが優しく広がり、本来の味がたのしめます。</p>
+    </div>
+    <div class="voice2 swiper-slide">
+      <img alt="" src="image/voice_2.png">
+      <p class="voice2_name">千葉県O様</p>
+      <h3>安心できる品質に大満足</h3>
+      <p>
+        オーガニック農作物にこだわった生産者から送られてくるため、とても安心して毎日食卓に出せるのがうれしいです。小さな子供や働き盛りの夫など、健康に気を遣って食から体づくりをしたい我が家には、もう手放せない野菜となっています。</p>
+    </div>
+    <div class="voice3 swiper-slide">
+      <img alt="" src="image/voice_3.png">
+      <p class="voice3_name">東京都M様</p>
+      <h3>旬の野菜が食べられる豊かさ</h3>
+      <p>
+        鮮度にこだわる「スグ食べ」だからこそ、旬になった野菜を「今だ！」と送ってきてくれるので、食卓に並ぶ野菜は常に旬の食材です。一カ所の農家さんからではなく複数の農家から選べるので、地域によっての旬の違いも楽しめます。たまに、スーパーに並ばないような珍しい野菜がまざるのも、わくわくしますね。</p>
+    </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<!--Q&A-->
+<section class="FAQ">
+  <h1>Q&A</h1>
+  <h1>よくある質問</h1>
+  <div class="FAQ_1">
+    <div class="FAQ_1_Q1">
+      <img alt="" class="icon_FAQ" src="image/Q.png">
+      <p class="Q1_content">産地直送のサービスってよく見るけど何が違うの？</p>
+    </div>
+    <div class="FAQ_1_A1">
+      <img alt="" class="icon_FAQ" src="image/A.png">
+      <div class="A1_content">
+        <p>鮮度が抜群に違います。</p>
+        <p>
+          通常の産直サービスは、一度倉庫などに野菜を集め、そこで箱詰め作業をして配送しています。この仕組みでは、お客様が商品を受け取る時には収穫してから3,4日が経過しています。スグ食べでは、箱詰め作業を農家さんにお願いすることにより、最短で収穫当日に商品を受け取ることができます。</p>
+      </div>
+    </div>
+  </div>
+  <div class="FAQ_2">
+    <div class="FAQ_2_Q2">
+      <img alt="" class="icon_FAQ" src="image/Q.png">
+      <p class="Q2_content">どんな農家さんが登録してるの？</p>
+    </div>
+    <div class="FAQ_2_A2">
+      <img alt="" class="icon_FAQ" src="image/A.png">
+      <div class="A2_content">
+        <p>農薬不使用にこだわる、オーガニック農家さんのみが登録しています。
+        </p>
+        <p>
+          有機栽培や自然栽培などの環境に配慮した農法で生産するには、通常以上に費用も手間もかかります。そんな中でも、「安心な野菜を食べて欲しい」という強い思いを持って、こだわって野菜を作っている農家さんがいます。そういった、厳選されたオーガニック農家さんのみが登録しているため、安心してお買い物を楽しんでいただけます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--trail2-->
+<section class="trail">
+  <img alt="" class="trail_decoration" src="image/trail.png">
+  <p class="leading">自信があるから、是非食べてもらいたい</p>
+  <h1>１回限り！少量お試しセット</h1>
+  <div class="trail_box">
+    <div class="trail_1">
+      <img alt="" src="image/vegetables_trail.png">
+      <div class="trail_1_title">
+        <p>ベジックス</p>
+        <span>|</span>
+        <p>旬＊お試し野菜セット（6品目）</p>
+      </div>
+      <div class="trail_1_content">
+        <span>￥1,280</span>
+        <span>（税込 / 送料別）</span>
+        <span>生産者/千葉県松戸市</span>
+      </div>
+    </div>
+    <div class="trail_2">
+      <img alt="" src="image/paprika_trail.png">
+      <div class="trail_2_title">
+        <p>くちぶえ農園</p>
+        <span>|</span>
+        <p>旬＊お試し野菜セット（6品目）</p>
+      </div>
+      <div class="trail_2_content">
+        <span>￥1,280</span>
+        <span>（税込 / 送料別）</span>
+        <span>生産者/長野県 飯田市</span>
+      </div>
+    </div>
+  </div>
+  <a href="#"><img alt="" class="buy_btn2" src="image/buy_btn2.png"></a>
+</section>
+</main>
+<!--footer-->
+<div class="pageToTop" id="pageToTop">
+  <img src="image/Page_up.png" alt="" onclick="scrollToTop()">
+</div>
+<footer class="footer">
+  <div class="footer_top">
+    <img alt="" class="PageUp" onclick="scrollToTop()" src="image/Page_up.png">
+    <img alt="" class="footer_logo" src="image/logo.png">
+  </div>
+  <div class="pageTop"></div>
+  <small>Copyright . All Right Reserved.</small>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
